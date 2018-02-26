@@ -1,95 +1,166 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
+@section('title','Inicio')
+@section('content')
+    <section role="banner" id="home">
+      <header id="header">
+        <div class="header-content clearfix"> 
+            <a class="logo" href=""><span class="icon icon-genius"> </span> Grupo Logic</a>
+              <nav class="navigation" role="navigation">
+                <ul class="primary-nav">
+                  <li><a href="#home">Inicio</a></li>
+                  <li><a href="#intro">Promociones</a></li>
+                  <li><a href="#services">Servicios</a></li>
+                  <li><a href="#contact">Contacto</a></li>
 
-        <title>Laravel</title>
+                        <!-- Authentication Links -->
+                        @if (Auth::guest())
+                            <li><a href="{{ route('login') }}">Iniciar sesion</a></li>
+                            <li><a href="{{ route('register') }}">Registrarse</a></li>
+                        @else
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endif
+                    
 
-            .full-height {
-                height: 100vh;
-            }
+                </ul>
+              </nav>
+          <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+      </header> 
+    </section>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+      <section id="main-slider">
+        <div class="owl-carousel">
+            <div class="item" style="background-image: url(estilos/images/slider/mo.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            </div><!--/.item-->
+             <div class="item" style="background-image: url(estilos/images/slider/mo.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content">
+                                    <h2>Best Solution</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore.</p>
+                                    <a class="btn btn-primary btn-lg" href="#package">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div><!--/.item-->
+        </div><!--/.owl-carousel-->
+    </section><!--/#main-slider-->
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+    <!-- intro section -->
+<section id="intro" class="section intro">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <h3>Our Products</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  <div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="estilos/images/slider/mo.jpg" alt="img">
+      <div class="caption">
+        <h3>Social Media</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum</p>
+
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="estilos/images/slider/mo.jpg" alt="img">
+      <div class="caption">
+        <h3>Digital Curve</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum</p>
+
+      </div>
+    </div>
+  </div>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="estilos/images/slider/mo.jpg" alt="img">
+      <div class="caption">
+        <h3>E-Commerce</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu libero scelerisque ligula sagittis faucibus eget quis lacus.Lorem ipsum</p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+<!-- intro section -->
+
+<!-- footer1 section -->
+<section id="testimonials" class="section testimonials no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+                  <div class="col-md-12">
+                    <blockquote>
+                      <h1>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa
+                         semper aliquam quis mattis consectetur adipiscing elit.." </h1>
+                      <p>Chris Mentsl</p>
+                    </blockquote>
+                  </div>
+    </div>
+  </div>
+</section>
+<!-- footer1 section -->
+
+<!-- Footer section -->
+<footer class="footer">
+<div class="container-fluid">
+<div id="map-row" class="row">
+    <div class="col-xs-12">
+                
+               <iframe width="100%" height="400" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124838.69816625335!2d-86.32850178569495!3d12.097818083973918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1sen!2sni!4v1519606791745"></iframe>
+
+               
+
+          <div id="map-overlay" class="col-xs-5 col-xs-offset-6" style="">
+            <h2 style="margin-top:0;color:#fff;">Contactanos</h2>
+            <address style="color:#fff;">
+                <strong>Grupo Logic</strong><br>
+                1234 Street Dr.<br>
+                Managua, MN<br>
+                Nicargua<br>
+                <br>
+                <abbr title="Phone">Tel:</abbr> (505) 123-123
+            </address>
+              © 2018 Grupo Logic.<a target="_blank" href="http://codenica.herokuapp.com/" title="CODENICA"> codenica.com</a>
         </div>
-    </body>
-</html>
+    </div>
+     </div>
+</div>
+</footer>
+<!-- Footer section -->
+
+@endsection
