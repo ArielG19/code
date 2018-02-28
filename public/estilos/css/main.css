@@ -34,9 +34,10 @@ h5 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+/*-------------------------------------------------------------------------------------------------------------------------*/
 .btn {
 	background-color: transparent;
-	color: #F05DA3;
+	color: #4381F3;
 	font-size: 16px;
 	font-weight: 600;
 	border: 0;
@@ -45,12 +46,12 @@ h5 {
 	border-radius: 2px;
 	display: inline-block;
 	text-transform: uppercase;
-	border: 1px solid #F05DA3;
+	border: 1px solid #494DDF;
 }
 .btn:hover, .btn:focus {
-	background-color: #F05DA3;
+	background-color: #C2C0BF;
 	color: #fff;
-	border-color: #F05DA3;
+	
 }
 .btn-large {
 	padding: 15px 40px;
@@ -75,11 +76,12 @@ a:hover, a:focus {
 	-webkit-transition: background-color, color, 0.3s;
 	transition: background-color, color, 0.3s;
 }
+/*color del body------------------------------------------------------------------------------------------------------------*/
 body {
 	font-family: "Open Sans", Arial, sans-serif;
 	font-weight: 400;
-
-	/*background: #ff5a27;--------------------------------------------------------------------------------------------------*/
+	color: #6c7279;
+	background: #FAF1EE;
 }
 ul, ol {
 	margin: 0;
@@ -124,8 +126,7 @@ ul li {
 	float: left;
 	font-size: 20px;
 	font-weight:700;
-	color:#40E44F;
-	/*color: #FF5722;---------------------------------------------------------------------------------------------------------*/
+	color: #FF5722;
 	text-decoration:none;
 	text-transform:uppercase;
 	letter-spacing: 1px;
@@ -372,7 +373,7 @@ ul li {
 }
 #main-slider .owl-prev:hover,
 #main-slider .owl-next:hover {
-  background-color: #00E97F;
+  background-color: #ff5a27;
 }
 #main-slider .owl-prev {
   left: -35px;
@@ -399,7 +400,6 @@ ul li {
 }
  .thumbnail p{}
  .thumbnail img{}
- /*--------------------------------------------------------------------------------------------------------------*/
 .banner {
 	background-image: url(../images/banner.jpg);
 	background-position: center top;
