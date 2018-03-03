@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('/usuarios','UserController');
+Route::get('/listar-usuarios','UserController@listarUsuario');
+Route::post('/enviar-email','UserController@enviar');
+
+Route::get('/contactanos','ContactoController@index');
+Route::POST('/enviar','ContactoController@enviar_correo');

@@ -1,23 +1,14 @@
-@extends('layouts.app')
-
+@extends('panel.interno')
+@section('title','Panel de administracion')
+       
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+ <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">My Dashboard</li>
+          </ol>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloribus accusantium, id iusto, reiciendis et officiis voluptatem nesciunt magnam saepe illum, natus architecto! Voluptates nemo tempora, temporibus id beatae qui.</p>
 
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 @endsection

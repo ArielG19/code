@@ -18,22 +18,22 @@
             <link rel="stylesheet" href="estilos/css/responsive.css">
             <link rel="stylesheet" href="estilos/css/font-icon.css">
             <link rel="stylesheet" href="estilos/css/animate.min.css">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <script defer src="panel/vendor/font-awesome/js/js/fontawesome-all.js"></script>
              {{--ESTILOS--}}
             <title>@yield('title','Default')</title>
         </head>
     <body>
-         {{--<section>
-                @include('include.nav')
-            </section>--}}
-
+        <section>
+             @include('includes.nav1')
+            </section>
             <section>
                 @yield('content')
-            </section>
 
-            {{--<section>
-                @include('include.footer')
-            </section>--}}
+            </section>
+            
+            <section>
+                @include('includes.footer1')
+            </section>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
             <script src="estilos/js/bootstrap.min.js"></script> 
             <script src="estilos/js/owl.carousel.min.js"></script>
@@ -44,7 +44,7 @@
             <script src="estilos/js/modernizr.js"></script> 
             <script src="estilos/js/main.js"></script> 
             <script src="estilos/js/jquery.contact.js"></script> 
-            <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+           
             @yield('script')
     </body>
 </html>
