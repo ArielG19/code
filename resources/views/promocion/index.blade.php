@@ -1,5 +1,5 @@
 @extends('panel.interno')
-@section('title','Usuarios')
+@section('title','Panel de administracion')
        
 @section('content')
   <div class="col-xs-12">
@@ -27,13 +27,7 @@
                 <strong> Se actualizo correctamente</strong>
             </div>
 
-             <div id="message-enviado" class="alert alert-secondary alert-dismissible" role="alert" style="display:none">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <strong> Se envio su mensaje...</strong>
-            </div>
-
+        
 
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -50,7 +44,7 @@
                     </p>
                     @include('usuario.create')
                     <div id="listar-usuarios"></div>
-                    @include('usuario.mensaje')
+                    
                     @include('usuario.edit')
                 </div>
 
@@ -58,7 +52,7 @@
             </div>
         </div>
             @section('script')
-            	<script type="text/javascript" src="{{asset('/js/user.js')}}"></script>
+            	<script type="text/javascript" src="{{asset('/js/')}}"></script>
 			@endsection
 
 @endsection

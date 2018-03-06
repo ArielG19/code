@@ -57,12 +57,23 @@ h5 {
 	padding: 15px 40px;
 }
 #map-overlay {
-    height:400px;
-    margin-top:-405px;
+    height:250px;
+    margin-top:-190px;
+    margin-right:90px !important;
     background-color: rgba(47, 47, 47, 0.88);
-    padding:40px;
     color: #fff;
 }
+
+@media screen and (max-width: 640px) {
+ 	#map-overlay {
+ 		width: 70%;
+    	margin-left: 60px;
+    	margin-top: 10px !important;
+    	margin-bottom: 10px;
+}
+
+ }
+
 /* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
@@ -137,7 +148,9 @@ ul li {
 }
 /*------------------------------------------------------------------------------------------------------------------------menu*/
 #header.fixed {
-	background-color: #000000;
+
+	background-color: rgba(47, 47, 47, 0.90);
+
 }
 #header.fixed a {
 	color: #ffffff;

@@ -26,7 +26,9 @@
         <p style="margin: 2px; font-size: 15px">
           Somos grupo Logic, una empresa de transporte y mudanza que se encuentra en la ciudad de Managua Nicaragua.
           <br><br>
+          <h4>
           {!!$mensaje!!}
+          </h4>
         </p>
         
         <div style="width: 100%;margin:20px 0; display: inline-block;text-align: center">

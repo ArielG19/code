@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title','Iniciar sesión')
 @section('content')
-<div class="container" style="padding-top: 50px;">
+<div class="container" style="padding-top: 120px;padding-bottom: 200px;">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">

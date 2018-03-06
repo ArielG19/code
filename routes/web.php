@@ -25,3 +25,5 @@ Route::post('/enviar-email','UserController@enviar');
 
 Route::get('/contactanos','ContactoController@index');
 Route::POST('/enviar','ContactoController@enviar_correo');
+
+Route::resource('/promociones','PromocionesController');

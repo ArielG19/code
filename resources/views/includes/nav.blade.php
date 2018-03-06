@@ -15,6 +15,15 @@
                     </a>
                   </li>
 
+                  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <a class="nav-link" href="{{url('/promociones')}}">
+                      
+                      <i class="fas fa-gift"></i>
+                      <span class="nav-link-text">Promociones</span>
+                    </a>
+                  </li>
+
+
                 </ul>
                 <ul class="navbar-nav sidenav-toggler">
                   <li class="nav-item">

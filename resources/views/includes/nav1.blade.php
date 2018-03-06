@@ -5,7 +5,7 @@
         <a class="logo" href="">Grupo Logic <i class="fas fa-truck"></i></a>
           <nav class="navigation" role="navigation">
             <ul class="primary-nav">
-              <li><a href="#home">Inicio</a></li>
+              <li><a href="/">Inicio</a></li>
               <li><a href="#intro">Promociones</a></li>
               <li><a href="#services">Servicios</a></li>
               <li><a href="{{url('contactanos')}}">Contacto</a></li>
