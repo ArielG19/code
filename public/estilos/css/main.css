@@ -121,7 +121,8 @@ ul li {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	background: rgba(255, 255, 255, 0);
+	background: rgba(255, 255, 255, 6);
+	/*-----------------------------------------------------------------------------------------------------------*/
 }
 #header .header-content {
 	margin: 0 auto;

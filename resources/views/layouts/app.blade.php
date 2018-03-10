@@ -32,13 +32,14 @@
             </section>
             
             <section>
+                @include('includes.modal')
                 @include('includes.footer1')
             </section>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
             <script src="estilos/js/bootstrap.min.js"></script> 
             <script src="estilos/js/owl.carousel.min.js"></script>
             <script src="estilos/js/mousescroll.js"></script>
-            <script src="estilos/js/smoothscroll.js"></script>
+            
             <script src="estilos/js/jquery.flexslider-min.js"></script> 
             <script src="estilos/js/jquery.fancybox.pack.js"></script>  
             <script src="estilos/js/modernizr.js"></script> 

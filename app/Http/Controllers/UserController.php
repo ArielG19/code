@@ -124,7 +124,7 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         //
-          if($request->ajax()){
+        if($request->ajax()){
 
                 $usuarios =User::FindOrFail($id);
                 //en input amacenamos toda la info del request

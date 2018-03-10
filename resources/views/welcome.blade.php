@@ -74,4 +74,5 @@
   </div>
 </section>
 <!-- intro section -->
+@include('includes.mapa')
 @endsection

@@ -7,6 +7,14 @@
 
           <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+                  @if(Auth::user()->type == "admin")
+                  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <a class="nav-link" href="{{url('/home')}}">
+                      
+                      <i class="fas fa-user"></i>
+                      <span class="nav-link-text">Dashboard</span>
+                    </a>
+                  </li>
                   <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                     <a class="nav-link" href="{{url('/usuarios')}}">
                       
@@ -16,12 +24,13 @@
                   </li>
 
                   <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                    <a class="nav-link" href="{{url('/promociones')}}">
+                    <a class="nav-link" href="{{url('/servicios')}}">
                       
                       <i class="fas fa-gift"></i>
-                      <span class="nav-link-text">Promociones</span>
+                      <span class="nav-link-text">Agregar Servicios</span>
                     </a>
                   </li>
+                  @endif
 
 
                 </ul>

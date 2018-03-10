@@ -6,14 +6,14 @@
           <nav class="navigation" role="navigation">
             <ul class="primary-nav">
               <li><a href="/">Inicio</a></li>
-              <li><a href="#intro">Promociones</a></li>
-              <li><a href="#services">Servicios</a></li>
+              <li><a href="{{url('ver-servicios')}}">Servicios</a></li>
               <li><a href="{{url('contactanos')}}">Contacto</a></li>
+              <li><a href="#intro">Quienes somos</a></li>
 
                     <!-- Authentication Links -->
-                    @if (Auth::guest())
-                        <li><a href="{{ route('login') }}">Iniciar sesion</a></li>
-                        <li><a href="{{ route('register') }}">Registrarse</a></li>
+                  @if (Auth::guest())
+                        <li><a href="{{ url('login') }}">Iniciar sesion</a></li>
+                        <li><a href="{{ url('register') }}">Registrarse</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" data-toggle="modal" data-target="#exampleModal">
