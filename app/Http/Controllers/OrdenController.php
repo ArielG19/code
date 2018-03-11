@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Servicio;
-use App\Orden;
+use App\servicio;
+use App\orden;
 use Auth;
 use DB;
 
@@ -67,7 +67,7 @@ class OrdenController extends Controller
         if($request->ajax())
         {
                         //dd($request->type);
-                        $orden = new Orden();
+                        $orden = new orden();
                         $orden->id_usuario = \Auth::user()->id;
                         $orden->id_servicio = $request->id_servicio;
                         $orden->save();
@@ -93,7 +93,7 @@ class OrdenController extends Controller
     public function show($id)
     {
         //
-        $servicios = Servicio::FindOrFail($id);
+        $servicios = servicio::FindOrFail($id);
         return response()->json($servicios);
 
         //return view('servicio.edit')->with('servicios',$servicios);
@@ -156,7 +156,7 @@ class OrdenController extends Controller
         //
         if($request->ajax()){
 
-                $orden = Orden::FindOrFail($id);
+                $orden = orden::FindOrFail($id);
                 //en input amacenamos toda la info del request
                 $input = $request->all();
                 $resultado = $orden->fill($input)->save();

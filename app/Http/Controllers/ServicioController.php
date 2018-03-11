@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Servicio;
+use App\servicio;
 use Image;
 class ServicioController extends Controller
 {
@@ -20,13 +20,13 @@ class ServicioController extends Controller
 
     public function listarServicios()
     {
-        $servicios = Servicio::Orderby('titulo','desc')->paginate(8);
+        $servicios = servicio::Orderby('titulo','desc')->paginate(8);
         return view('servicio.listar')->with('servicios',$servicios);
     }
 
     public function VerServicios()
     {
-        $servicios = Servicio::Orderby('created_at','desc')->paginate(9);
+        $servicios = servicio::Orderby('created_at','desc')->paginate(9);
         return view('servicio.ver')->with('servicios',$servicios);
     }
 
@@ -51,7 +51,7 @@ class ServicioController extends Controller
     {
         //
 
-        $servicio = new Servicio;
+        $servicio = new servicio;
         $servicio->titulo = $request->titulo;
         $servicio->descripcion = $request->descripcion;
         
@@ -103,7 +103,7 @@ class ServicioController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $servicio = Servicio::findOrFail($id);
+        $servicio = servicio::findOrFail($id);
         $servicio->titulo = $request->titulo;
         $servicio->descripcion = $request->descripcion;
         
@@ -127,7 +127,7 @@ class ServicioController extends Controller
     public function destroy($id)
     {
         //
-        $servicio = Servicio::FindOrFail($id);        
+        $servicio = servicio::FindOrFail($id);        
         $resultado = $servicio->delete();
 
         if($resultado)
