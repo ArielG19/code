@@ -38,5 +38,9 @@ Route::resource('/ordenes','OrdenController');
 Route::get('servicios-realizados','OrdenController@realizados');
 Route::get('servicios-solicitados','OrdenController@mi_orden');
 
+Route::get('/quienes-somos', function () {
+    return view('quienesSomos');
+});
+
 
 

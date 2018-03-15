@@ -2,13 +2,13 @@
 <section role="banner" id="home">
   <header id="header">
     <div class="header-content clearfix"> 
-        <a class="logo" href="">Grupo Logic <i class="fas fa-truck"></i></a>
+        <a class="logo" href="">TLS Logic <i class="fas fa-truck"></i></a>
           <nav class="navigation" role="navigation">
             <ul class="primary-nav">
               <li><a href="/">Inicio</a></li>
               <li><a href="{{url('ver-servicios')}}">Servicios</a></li>
               <li><a href="{{url('contactanos')}}">Contacto</a></li>
-              <li><a href="#intro">Quienes somos</a></li>
+              <li><a href="{{url('quienes-somos')}}">Quienes somos</a></li>
 
                     <!-- Authentication Links -->
                   @if (Auth::guest())

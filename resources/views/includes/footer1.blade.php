@@ -13,14 +13,14 @@
                  <div id="map-overlay" class="col-xs-5 col-xs-offset-6" >
                     <h2 style="margin-top:0;color:#fff;">Contactanos</h2>
                     <address style="color:#fff;">
-                      <strong>Grupo Logic</strong><br>
+                      <strong>TLS LOGIC</strong><br>
                       1234 Street Dr.<br>
                       Vancouver, BC<br>
                       Canada<br>
                       V6G 1G9<br>
-                      <abbr title="Phone">Tel:</abbr> (604) 555-4321
+                      <abbr title="Phone">Tel:</abbr> Movis 75323769, Claro 82175716.
                     </address>
-                    © 2018 Company Name. <a target="_blank" href="http://codenica.herokuapp.com/" title="codenica">codenica.com</a>
+                    © 2018 TLS LOGIC. by <a target="_blank" href="http://codenica.herokuapp.com/" title="codenica">codenica.com</a>
                   </div>
 
 
