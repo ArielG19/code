@@ -64,8 +64,9 @@
         <div class="col-sm-6 col-md-4">
                 <img style="margin-left: 70px;" src="/estilos/images/ca.png" alt="Generic placeholder image" width="140" height="140">
                 
-                <h3 style="margin-left: 60px;"> Mudanza y Menaje</h3><hr style="border: solid 1px;">
-                <p> Brindamos servicios para traslados de oficinas y residenciales a nivel local y nacional. Contamos con la debida experiencia para organizar de forma cuidadosa el mobiliario y demás enseres que se deban trasladar para garantizar las perfectas condiciones de los mismos y hacer de su mudanza un proceso eficaz, cómodo y tranquilo.</p>
+                <h3 style="margin-left: 60px;"> Mudanza y Menaje </h3><hr style="border: solid 1px;">
+                <p> Brindamos servicios para traslados de oficinas y residenciales a nivel local y nacional. Contamos con la debida experiencia para organizar de forma cuidadosa el mobiliario y demás enseres que se deban trasladar para garantizar las perfectas condiciones de los mismos y hacer de su mudanza un proceso eficaz, cómodo y tranquilo.
+                </p>
                 
         </div>
     </div>

@@ -15,7 +15,7 @@
                     <address style="color:#fff;">
                       
                       <div><i class="fab fa-facebook" style="font-size: 50px"></i></div>
-                      <a href="https://www.facebook.com/Empresa-de-Transporte-Log%C3%ADstico-2041215829537726/">TLS Logic.</a><br>
+                      <a href="https://www.facebook.com/Empresa-de-Transporte-Log%C3%ADstico-2041215829537726">TLS Logic.</a><br>
                      
                       <i class="fas fa-phone-square"></i> Tel: Movis 75323769. 
                       <br>
