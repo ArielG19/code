@@ -1,14 +1,12 @@
 
 
 <!-- footer1 section -->
-<section id="testimonials" class="section testimonials no-padding">
+<section style="padding-bottom: 20px;" id="testimonials" class="section testimonials no-padding">
   <div class="container-fluid">
     <div class="row no-gutter">
-              <div class="col-md-12">
+              <div class="col-md-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <blockquote>
                      
-
-       
                     </blockquote>
                  <div id="map-overlay" class="col-xs-5 col-xs-offset-6" >
                     <h2 style="margin-top:0;color:#fff;">Contactanos</h2>
