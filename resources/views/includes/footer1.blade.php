@@ -13,12 +13,13 @@
                  <div id="map-overlay" class="col-xs-5 col-xs-offset-6" >
                     <h2 style="margin-top:0;color:#fff;">Contactanos</h2>
                     <address style="color:#fff;">
-                      <strong>TLS LOGIC</strong><br>
-                      1234 Street Dr.<br>
-                      Vancouver, BC<br>
-                      Canada<br>
-                      V6G 1G9<br>
-                      <abbr title="Phone">Tel:</abbr> Movis 75323769, Claro 82175716.
+                      
+                      <div><i class="fab fa-facebook" style="font-size: 50px"></i></div>
+                      <a href="https://www.facebook.com/Empresa-de-Transporte-Log%C3%ADstico-2041215829537726/">TLS Logic.</a><br>
+                     
+                      <i class="fas fa-phone-square"></i> Tel: Movis 75323769. 
+                      <br>
+                      <i class="fas fa-phone-square"></i> Tel: Claro 82175716.
                     </address>
                     © 2018 TLS LOGIC. by <a target="_blank" href="http://codenica.herokuapp.com/" title="codenica">codenica.com</a>
                   </div>

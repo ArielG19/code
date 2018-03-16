@@ -451,14 +451,21 @@ ul li {
 	/* color: #000; */
 	padding: 50px 0;
 }
+.intro h2 {
+	color: #ff5a27;
+	margin-top: 0;
+	font-weight: 600;
+	/*font-size: 32px;*/
+}
 .intro h3 {
 	color: #ff5a27;
 	margin-top: 0;
 	font-weight: 600;
-	font-size: 32px;
+	font-size: 22px;
 }
+
 .intro p {
-	color: #737373;
+	color: #0B0B0B;
 	font-weight: 400;
 }
 /* -----------------------------------------------------------------------------
